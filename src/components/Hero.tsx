@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Mypic from "../../Public/mypic.jpg";
 import {
   Github,
   Linkedin,
@@ -136,20 +137,22 @@ const Hero = () => {
                 : "translate-x-full opacity-0"
             }`}
           >
-            <div className="relative w-full h-[500px]">
-              {/* Central Profile Picture */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <div className="w-32 h-32 rounded-full overflow-hidden ring-4 ring-blue-500 shadow-2xl">
-                  <img
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400"
-                    alt="Profile"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+            <div className="relative w-full h-[120px]">
+
+             {/* Central Profile Picture */}
+        {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="w-36 h-36 rounded-full overflow-hidden ring-4 ring-blue-600 shadow-lg shadow-gray-500/50">
+        <img
+      src={Mypic}
+      alt="Profile Picture"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div> */}
+
 
               {/* Orbiting Elements */}
-              <div className="absolute inset-0 animate-spin-slow">
+              {/* <div className="absolute inset-0 animate-spin-slow">
                 {[
                   Terminal,
                   Database,
@@ -181,10 +184,10 @@ const Hero = () => {
                     </div>
                   );
                 })}
-              </div>
+              </div> */}
 
               {/* Connecting Lines */}
-              <div className="absolute inset-0">
+              {/* <div className="absolute inset-0">
                 {[...Array(8)].map((_, index) => (
                   <div
                     key={index}
@@ -195,7 +198,7 @@ const Hero = () => {
                     }}
                   />
                 ))}
-              </div>
+              </div> */}
 
               {/* Floating Binary Numbers */}
               {[...Array(10)].map((_, index) => (

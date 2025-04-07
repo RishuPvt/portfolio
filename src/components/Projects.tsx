@@ -19,7 +19,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&h=500",
     technologies: ["TypeScript", "React", "Prisma", "PostgreSQL"],
-    liveDemo: "https://example.com",
+    liveDemo: "",
     github: "https://github.com/RishuPvt/-ClientWhyNotAsk",
   },
   {
